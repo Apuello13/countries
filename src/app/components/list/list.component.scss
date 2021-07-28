@@ -1,0 +1,40 @@
+.card{
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 1px 7px #D5D8DC;
+    height: auto;
+    width: 300px;
+    margin-bottom: 12px;
+
+    img{
+        width: 100%;
+        height: 180px;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        cursor: pointer;
+    }
+
+    .body{
+        padding: 30px 20px;
+
+        h2{
+            font-weight: 800;
+        }
+        ul{
+            margin-top: 20px;
+            list-style: none;
+            padding: 0;
+
+            li{
+                font-weight: 400;
+            }
+        }
+    }
+}
+
+@media (max-width: 500px){
+    .card{
+        margin: 0 auto;
+        margin-bottom: 15px;
+    }
+}

@@ -1,0 +1,37 @@
+<div class="container">
+    <div>
+        <button class="btn" routerLink="/">Back</button>
+    </div>
+    <div class="detail">
+        <img [src]="country.flag" alt="">
+        <div>
+            <h1>{{ country.name }}</h1>
+            <div class="content">
+                <div>
+                    <p>Native Name: <span>{{ country.nativeName }}</span></p>
+                    <p>Population: <span>{{ country.population | number }}</span></p>
+                    <p>Region: <span>{{ country.region }}</span></p>
+                    <p>Sub Region: <span>{{ country.subregion }}</span></p>
+                    <p>Capital: <span>{{ country.capital }}</span></p>
+                </div>
+                <div>
+                    <p>Top Level Domain: <span>{{ country.topLevelDomain[0] }}</span></p>
+                    <p>Currencies: <span>{{ country.currencies[0].name }}</span></p>
+                    <p>Languages: 
+                        <span *ngFor="let language of country.languages; let i = index">
+                            {{ country.languages.length  - i  === 1 ? language.name : language.name + ", " }}
+                        </span>
+                </p>
+                </div>
+            </div>
+            <div class="next">
+                <p>
+                    Border Countries:
+                    <span *ngFor="let next of country.borders">
+                        {{ next }}
+                    </span>
+                </p> 
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,14 @@
+<div class="card">
+    <img [src]="country.flag" 
+        [alt]="country.name" 
+        [title]="country.name" 
+        [routerLink]="['/country', country.name]">
+    <div class="body">
+        <h2>{{ country.name }}</h2>
+        <ul>
+            <li>Population: {{ country.population  | number }}</li>
+            <li>Region: {{ country.region }}</li>
+            <li>Capital: {{ country.capital }}</li>
+        </ul>
+    </div>
+</div>
