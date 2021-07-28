@@ -49,6 +49,7 @@
         font-weight: 600;
         p{
             width: 400px;
+            height: 380px;
         }
         span{
             padding: 5px 10px;
@@ -68,7 +69,7 @@
         flex-direction: column;
 
         img{
-            width: 450px;
+            width: 100%;
         }
 
         .content{

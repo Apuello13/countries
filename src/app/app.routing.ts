@@ -8,7 +8,7 @@ export const ROUTES: Routes = [
   { path: '',
     component: LayoutComponent,
     children: [
-      { path: 'countries', component: SearchComponent },
+      { path: '', component: SearchComponent },
       { path: 'country/:nombre', component: DetailComponent },
       { path: '', redirectTo: '/countries', pathMatch: 'full' }
     ]
